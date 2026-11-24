@@ -1,0 +1,1 @@
+Build individual components here: `Sidebar.jsx`, `MainContent.jsx`, `StatsCard.jsx`, and `TransactionTable.jsx`. Use CSS Modules under `src/styles` or adjacent to components. Integrate those files into `App.jsx` and use React Hooks for navigation state. Keep this file as implementation guidance; the final app must contain real working components.

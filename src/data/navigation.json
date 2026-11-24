@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dashboard",
+    "label": "Dashboard",
+    "aria_label": "View dashboard overview"
+  },
+  {
+    "id": "sales",
+    "label": "Sales",
+    "aria_label": "View sales overview"
+  },
+  {
+    "id": "transactions",
+    "label": "Transactions",
+    "aria_label": "View all transactions"
+  }
+]

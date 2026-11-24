@@ -1,0 +1,161 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.summaryCard {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #DEE5EE;
+  border-radius: 12px;
+  background: #FFFFFF;
+}
+
+.cardLabel {
+  margin: 0 0 15px;
+  color: #687890;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.summaryCard h3 {
+  margin: 0;
+  color: #14263D;
+  font-size: 25px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.summaryCard span {
+  display: block;
+  margin-top: 12px;
+  color: #687890;
+  font-size: 12px;
+}
+
+.channelSection {
+  padding: 25px;
+  border: 1px solid #DEE5EE;
+  border-radius: 12px;
+  background: #FFFFFF;
+}
+
+.sectionHeader {
+  margin-bottom: 28px;
+}
+
+.sectionHeader h3 {
+  margin: 0;
+  color: #14263D;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sectionHeader p {
+  margin: 7px 0 0;
+  color: #687890;
+  font-size: 12px;
+}
+
+.channelItem {
+  margin-bottom: 25px;
+}
+
+.channelItem:last-child {
+  margin-bottom: 0;
+}
+
+.channelInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.channelInfo strong {
+  color: #23334B;
+  font-size: 13px;
+}
+
+.channelInfo span {
+  color: #14263D;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.progressTrack {
+  display: block;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #EEF1F5;
+}
+
+.progressTrack::-webkit-progress-bar {
+  border-radius: 20px;
+  background: #EEF1F5;
+}
+
+.progressTrack::-webkit-progress-value {
+  border-radius: 20px;
+  background: #2362DF;
+}
+
+.progressTrack::-moz-progress-bar {
+  border-radius: 20px;
+  background: #2362DF;
+}
+
+.orderCount {
+  margin: 8px 0 0;
+  color: #687890;
+  font-size: 11px;
+}
+
+.empty {
+  color: #687890;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .summaryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .summaryCard {
+    padding: 18px;
+  }
+
+  .summaryCard h3 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 390px) {
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .channelSection {
+    padding: 18px 14px;
+  }
+
+  .channelInfo span {
+    font-size: 12px;
+  }
+}

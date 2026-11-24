@@ -1,0 +1,12 @@
+{
+  "currency": "INR",
+  "period_label": "01 Oct\u201323 Nov 2026",
+  "total_transactions": 64,
+  "paid_orders": 39,
+  "processing_orders": 12,
+  "refunded_orders": 7,
+  "failed_orders": 6,
+  "net_paid_sales_inr": 65452,
+  "gross_paid_and_processing_inr": 85222,
+  "average_paid_order_inr": 1678.26
+}

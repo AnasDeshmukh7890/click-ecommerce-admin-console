@@ -1,0 +1,159 @@
+
+.container {
+  width: 100%;
+  margin-top: 24px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid #DEE5EE;
+  border-radius: 12px;
+  background: #FFFFFF;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.title {
+  margin: 0;
+  color: #14263D;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #687890;
+  font-size: 12px;
+}
+
+.filterLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #687890;
+  font-size: 12px;
+}
+
+.filterSelect {
+  min-height: 38px;
+  padding: 0 30px 0 12px;
+  border: 1px solid #DEE5EE;
+  border-radius: 7px;
+  background: #FFFFFF;
+  color: #23334B;
+  font: inherit;
+  cursor: pointer;
+}
+
+.filterSelect:focus-visible {
+  outline: 2px solid #2362DF;
+  outline-offset: 2px;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  padding: 14px 12px;
+  border-bottom: 1px solid #DEE5EE;
+  background: #F7F9FC;
+  color: #687890;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #EEF1F5;
+  color: #23334B;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.transactionId {
+  color: #2362DF !important;
+  font-weight: 600;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.paid {
+  background: #E5F5EF;
+  color: #148F69;
+}
+
+.processing {
+  background: #FFF4DE;
+  color: #A66A08;
+}
+
+.refunded {
+  background: #F0EAFE;
+  color: #7652B5;
+}
+
+.failed {
+  background: #FCE9E9;
+  color: #C44848;
+}
+
+.empty {
+  padding: 30px !important;
+  color: #687890 !important;
+  text-align: center;
+}
+
+.tableFooter {
+  padding-top: 16px;
+  border-top: 1px solid #EEF1F5;
+  color: #687890;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 17px 14px;
+  }
+
+  .tableHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .filterLabel {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .filterSelect {
+    min-width: 135px;
+  }
+}

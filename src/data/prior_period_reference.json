@@ -1,0 +1,8 @@
+{
+  "scenario_reference_only": true,
+  "prior_period": {
+    "net_paid_sales_inr": 60493,
+    "total_transactions": 57,
+    "paid_orders": 37
+  }
+}
